@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unicraft Resin Studio (UC) - Exquisite handmade resin art, custom keychains, custom name plates, bangles, jewellery, and personalized gifts crafted with ocean-wave resin aesthetics.">
+    <meta name="keywords" content="resin art, resin keychains, handmade gifts, custom name plate, resin bangles, ocean wave resin art, resin jewelry, Unicraft Resin Studio">
+    <title>UC - Unicraft Resin Studio | Handmade Resin Art & Custom Gifts</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Video Intro Overlay -->
+    <div class="intro-overlay fade-out" id="intro-overlay" style="cursor: pointer;" title="Click anywhere to skip intro">
+        <div class="intro-video-container">
+            <video id="intro-video" src="assets/YouCut_20260616_092316602.mp4" muted playsinline></video>
+        </div>
+    </div>
+
+    <!-- Top Highlight Banner -->
+    <div class="announcement-banner">
+        <p><i class="fa-brands fa-instagram"></i> 100% Customization Available! DM us on Instagram to customize your order.</p>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="container navbar">
+            <a href="#" class="logo" id="header-logo-link">
+                <span class="logo-initials" id="header-logo-initials" title="View Favorites collection">UC</span>
+                <span class="logo-text">UniCraft Resin Studio</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#catalog" class="nav-link">Shop Collection</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#about" class="nav-link">Our Story</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="icon-btn search-btn" aria-label="Search items" id="search-toggle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button class="icon-btn cart-btn" aria-label="Open Cart" id="cart-toggle">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="close-btn" id="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#catalog" class="mobile-link">Shop Collection</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#about" class="mobile-link">Our Story</a>
+        <div class="mobile-socials">
+            <a href="https://instagram.com/unicraft_2k26" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <video class="hero-video-bg" src="assets/YouCut_20260616_092316602.mp4" autoplay muted playsinline></video>
+        <div class="hero-overlay"></div>
+        
+    </section>
+
+    <!-- Main Content & Catalog -->
+    <main class="container">
+        
+        <!-- Catalog Grid Section -->
+        <section class="catalog-section" id="catalog">
+            <div class="section-header">
+                <span class="section-tag">Exquisite Catalogue</span>
+                <h2 class="section-title">Explore Our Creations</h2>
+                <p class="section-subtitle">Click on any product to open detailed customization notes, colors, glitters, and lettering choices.</p>
+                
+                <!-- Category Filter -->
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Crafts</button>
+                    <button class="filter-tab" data-filter="keychains">Keychains</button>
+                    <button class="filter-tab" data-filter="nameplates">Name Plates</button>
+                    <button class="filter-tab" data-filter="jewelry">Jewellery & Bangles</button>
+                    <button class="filter-tab" data-filter="bundles">Gift Bundles</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be generated dynamically by app.js to ensure easy maintenance, 
+                     but we keep high accessibility by having pre-rendered placeholders/templates if JS is disabled. -->
+                <noscript>
+                    <p>Please enable JavaScript to view and customize products from our online resin art collection.</p>
+                </noscript>
+            </div>
+        </section>
+
+        <!-- Gallery / Aesthetic Preview -->
+        <section class="gallery-section" id="gallery">
+            <div class="section-header">
+                <span class="section-tag">Visual Inspiration</span>
+                <h2 class="section-title">Resin Wave Showcase</h2>
+                <p class="section-subtitle">Take a peek at how our resin art looks in real-life custom orders.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/ocean_resin_bg.png" alt="Ocean wave close up">
+                    <div class="gallery-overlay">
+                        <span>Ocean Wave Coasters</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/resin_alphabet_keychain.jpg" alt="Keychain art">
+                    <div class="gallery-overlay">
+                        <span>Alphabet Keychains</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/resin_name_plate.jpg" alt="Name plate custom wood resin">
+                    <div class="gallery-overlay">
+                        <span>Door Name Plates</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/illuminated_name_plate.jpg" alt="Illuminated name plate">
+                    <div class="gallery-overlay">
+                        <span>LED Name Plates</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Story Section -->
+        <section class="about-section" id="about">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-bg-blob"></div>
+                    <img src="assets/ocean_resin_bg.png" alt="Artisan making resin wave">
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">The Artistry Behind UC</h2>
+                    <p>At <strong>Unicraft Resin Studio</strong>, we pour our hearts—and high-grade, UV-resistant epoxy resin—into every single piece we create. Rooted in the calming aesthetic of beach shores and ocean waves, our custom products serve as long-lasting memories for your keys, home doors, and style.</p>
+                    <p>Every piece undergoes a meticulous curing process of 24-48 hours, polished to a glass-like shine. Because everything is handmade, no two items are ever identical. You are truly receiving a one-of-a-kind art piece.</p>
+                    
+                    <div class="story-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Handmade</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">DMs Handled</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-col brand-col">
+                <a href="#" class="logo" id="footer-logo-link">
+                    <span class="logo-initials" id="footer-logo-initials" title="View Favorites collection">UC</span>
+                    <span class="logo-text">UniCraft Resin Studio</span>
+                </a>
+                <p>Custom resin creations capturing ocean tide aesthetics. Personalized names, glitters, and dried botanicals cured in glass-clear resin.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/unicraft_2k26" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col links-col">
+                <h4>Explore</h4>
+                <a href="#hero">Home</a>
+                <a href="#catalog">Shop Collection</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">Our Story</a>
+            </div>
+
+            <div class="footer-col contact-col">
+                <h4>Custom Enquiries</h4>
+                <p>Have a custom corporate order, wedding favors, or specific resin project ideas?</p>
+                <p class="contact-highlight">
+                    <a href="https://instagram.com/unicraft_2k26" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-instagram"></i> Direct Message @unicraft_2k26
+                    </a>
+                </p>
+                <p class="contact-email">
+                    <a href="mailto:jollyd241@gmail.com">
+                        <i class="fa-regular fa-envelope"></i> jollyd241@gmail.com
+                    </a>
+                </p>
+                <div class="share-box" style="margin-top: 15px;">
+                    <span style="font-size: 0.75rem; color: var(--text-muted); display: block; margin-bottom: 5px;">Share UniCraft Page Link:</span>
+                    <div style="display: flex; gap: 5px;">
+                        <input type="text" id="myInput" value="https://instagram.com/unicraft_2k26" readonly style="flex-grow: 1; font-size: 0.8rem; padding: 6px 10px; border-radius: var(--radius-sm); border: 1px solid rgba(13, 92, 117, 0.15); background: var(--text-light); color: var(--text-dark);">
+                        <button id="copyBtn" onclick="handleCopy()" class="copy-shortcut-btn" style="padding: 6px 12px;">Copy Link</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 UC - UniCraft Resin Studio. All Rights Reserved. Cured with passion and ocean waves.</p>
+        </div>
+    </footer>
+
+    <!-- PRODUCT DETAIL & CUSTOMIZATION MODAL -->
+    <div class="modal-backdrop" id="product-modal">
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <div class="modal-left">
+                    <img src="" alt="" id="modal-product-img">
+                </div>
+                <div class="modal-right">
+                    <div class="modal-product-header">
+                        <span class="modal-product-category" id="modal-product-category">Category</span>
+                        <h3 class="modal-product-title" id="modal-product-title">Product Title</h3>
+                        <p class="modal-product-price" id="modal-product-price">₹0</p>
+                    </div>
+
+                    <p class="modal-product-description" id="modal-product-description">
+                        Exquisite handmade resin item. Fully customizable with colors, custom letterings/numbers, luxury gold or silver foil flakes, and real dried flowers.
+                    </p>
+
+                    <!-- Customization Form -->
+                    <form id="customization-form" class="customization-form">
+                        <input type="hidden" id="modal-product-id">
+                        
+                        <!-- Alphabet / Text Input (Shown conditionally) -->
+                        <div class="form-group" id="custom-text-group">
+                            <label for="custom-text" id="custom-text-label">Name / Letter / Number to display:</label>
+                            <input type="text" id="custom-text" placeholder="e.g. 'A', '8', 'SWEET HOME'" maxlength="25">
+                            <span class="field-help">Specify letters or numbers to embed in the resin.</span>
+                        </div>
+
+                        <!-- Color Themes (Radio circles) -->
+                        <div class="form-group">
+                            <label>Base Color Theme:</label>
+                            <div class="color-options">
+                                <label class="color-swatch-wrapper">
+                                    <input type="radio" name="color-theme" value="Teal & Ocean Blue">
+                                    <span class="color-swatch" style="background: linear-gradient(135deg, #0D5C75, #1995AD);"></span>
+                                    <span class="color-swatch-label">Ocean Teal</span>
+                                </label>
+                                <label class="color-swatch-wrapper">
+                                    <input type="radio" name="color-theme" value="Pink & Rose Quartz">
+                                    <span class="color-swatch" style="background: linear-gradient(135deg, #F08080, #FFE4E1);"></span>
+                                    <span class="color-swatch-label">Blush Pink</span>
+                                </label>
+                                <label class="color-swatch-wrapper">
+                                    <input type="radio" name="color-theme" value="Emerald Green & Gold">
+                                    <span class="color-swatch" style="background: linear-gradient(135deg, #097969, #D4AF37);"></span>
+                                    <span class="color-swatch-label">Emerald Gold</span>
+                                </label>
+                                <label class="color-swatch-wrapper">
+                                    <input type="radio" name="color-theme" value="Lavender & Lilac">
+                                    <span class="color-swatch" style="background: linear-gradient(135deg, #E6E6FA, #B090D0);"></span>
+                                    <span class="color-swatch-label">Lavender</span>
+                                </label>
+                                <label class="color-swatch-wrapper">
+                                    <input type="radio" name="color-theme" value="Custom Color (Write in notes)">
+                                    <span class="color-swatch custom-rainbow"></span>
+                                    <span class="color-swatch-label">Other Custom</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Sparkle / Foil / Florals (Checkboxes) -->
+                        <div class="form-group">
+                            <label>Inclusions & Aesthetics (Select all that apply):</label>
+                            <div class="inclusions-grid">
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Gold Foil Flakes">
+                                    <span class="custom-checkbox"></span> Gold Foil Flakes
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Silver Foil Flakes">
+                                    <span class="custom-checkbox"></span> Silver Foil Flakes
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Dried Blue Hydrangeas">
+                                    <span class="custom-checkbox"></span> Dried Blue Flowers
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Dried Pink Rose Petals">
+                                    <span class="custom-checkbox"></span> Dried Pink Flowers
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Chunky Holographic Glitter">
+                                    <span class="custom-checkbox"></span> Holographic Glitter
+                                </label>
+                                <label class="checkbox-wrapper">
+                                    <input type="checkbox" name="inclusions" value="Miniature Sea Shells">
+                                    <span class="custom-checkbox"></span> Mini Sea Shells
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Text Field for Customization Notes (Mandatory/Descriptive field) -->
+                        <div class="form-group">
+                            <label for="customization-notes">Customization Notes & Instructions:</label>
+                            <textarea id="customization-notes" placeholder="Specify your preferences, colors, font styling, glitter placement, custom names, or special requests here..."></textarea>
+                            <span class="field-help">Example: 'Dark teal resin wash, gold foil only on edges, dried white flowers in center.'</span>
+                        </div>
+
+
+                        <!-- Action Buttons -->
+                        <div class="modal-form-actions">
+                            <button type="submit" class="btn btn-primary">Confirm & Add to Cart</button>
+                            <button type="button" class="btn btn-instagram-direct" id="modal-direct-checkout-btn">
+                                <i class="fa-brands fa-instagram"></i> Buy Now via DM
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CART SLIDE-OVER DRAWER -->
+    <div class="cart-drawer-backdrop" id="cart-drawer-backdrop">
+        <div class="cart-drawer" id="cart-drawer">
+            <div class="cart-header">
+                <h3>Your Cart (<span id="cart-drawer-count">0</span>)</h3>
+                <button class="cart-close" id="cart-close-btn" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="cart-body" id="cart-body">
+                <!-- Dynamic cart items will load here -->
+                <div class="empty-cart-message" id="empty-cart-msg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Your creative cart is empty.</p>
+                    <a href="#catalog" class="btn btn-primary" id="cart-empty-shop-btn">Browse Collection</a>
+                </div>
+                <div class="cart-items-container" id="cart-items-list">
+                    <!-- Javascript will append items here -->
+                </div>
+            </div>
+
+            <div class="cart-footer" id="cart-footer">
+                <div class="cart-total-row">
+                    <span>Subtotal:</span>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span class="cart-subtotal" id="cart-subtotal">₹0</span>
+                        <button type="button" class="copy-shortcut-btn" id="btn-copy-cart-subtotal" onclick="copySubtotalMessage(this)" title="Copy Order Message" style="padding: 6px; font-size: 0.85rem; height: auto; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: var(--radius-sm);">
+                            <i class="fa-regular fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+                <p class="cart-shipping-note"><i class="fa-solid fa-circle-info"></i> Shipping calculated on checkout via DM.</p>
+                <a href="#" class="btn btn-primary btn-block checkout-btn" id="checkout-btn" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> Checkout via Instagram DM
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS / REDIRECT MODAL FOR CHECKOUT -->
+    <div class="modal-backdrop" id="checkout-guide-modal">
+        <div class="modal-container small-modal">
+            <button class="modal-close" id="checkout-modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-guide-content">
+                <div class="success-icon-wrapper">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="success-heading-group">
+                    <h3 class="success-title">Order Message Copied!</h3>
+                    <p class="success-sub">Order details are copied. Opening Instagram DMs...</p>
+                </div>
+                
+                <!-- Rate Us & Visit Again Animated Widget -->
+                <div class="rate-us-container">
+                    <h4 class="rate-title">Rate Us & Visit Again! <span class="heart-pulse">💖</span></h4>
+                    <div class="star-rating" id="star-rating">
+                        <span class="star-btn" data-value="1"><i class="fa-regular fa-star"></i></span>
+                        <span class="star-btn" data-value="2"><i class="fa-regular fa-star"></i></span>
+                        <span class="star-btn" data-value="3"><i class="fa-regular fa-star"></i></span>
+                        <span class="star-btn" data-value="4"><i class="fa-regular fa-star"></i></span>
+                        <span class="star-btn" data-value="5"><i class="fa-regular fa-star"></i></span>
+                    </div>
+                    <p class="rate-thank-you" id="rate-thank-you">Thank you for supporting UniCraft Resin Studio!</p>
+                </div>
+
+
+                <div class="checkout-steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <p>We are opening Instagram DM with <strong>@unicraft_2k26</strong></p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <p>Simply paste (Ctrl+V) the message into the DM chat and hit send.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <p>We will confirm your order, customization preferences, and share payment details (UPI/GPay).</p>
+                    </div>
+                </div>
+
+                <div class="guide-actions">
+                    <button class="btn btn-secondary" id="btn-copy-again"><i class="fa-solid fa-copy"></i> Copy Again</button>
+                    <a href="#" target="_blank" class="btn btn-primary" id="btn-open-ig"><i class="fa-brands fa-instagram"></i> Open Instagram Chat</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- WISHLIST DRAWER (FAVORITES) -->
+    <div class="wishlist-drawer-backdrop" id="wishlist-drawer-backdrop">
+        <div class="wishlist-drawer" id="wishlist-drawer">
+            <div class="wishlist-header">
+                <h3>Favorites Collection (<span id="wishlist-drawer-count">0</span>)</h3>
+                <button class="wishlist-close" id="wishlist-close-btn" aria-label="Close wishlist"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="wishlist-body" id="wishlist-body">
+                <!-- Dynamic favorites will load here -->
+                <div class="empty-wishlist-message" id="empty-wishlist-msg">
+                    <i class="fa-regular fa-heart"></i>
+                    <p>No favorites saved yet.</p>
+                    <span class="empty-subtext">Click the heart icon on any craft to save it to your custom collection.</span>
+                </div>
+                <div class="wishlist-items-container" id="wishlist-items-list">
+                    <!-- Javascript will append items here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Search Drawer -->
+    <div class="search-backdrop" id="search-backdrop">
+        <div class="search-container">
+            <button class="search-close" id="search-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="search-input-wrapper">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-input" placeholder="Search resin keychains, name plates, jewelry..." autofocus>
+            </div>
+            <div class="search-results" id="search-results">
+                <!-- Search items pop up here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toast-msg">Item added to cart!</span>
+    </div>
+
+    <!-- Core Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
